@@ -1,0 +1,37 @@
+.search_container {
+  /* border: 1px solid blue; */
+  padding: 1rem 0px;
+}
+
+.search_container > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+svg {
+  color: rgb(3, 2, 2);
+}
+.reset_button,
+.filter_btn {
+  background: rgba(228, 226, 226, 0.534);
+  /* width: 35px;
+  height: 35px; */
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* .filter_btn {
+} */
+/* .btnUpdate {
+  color: green;
+} */
+
+@media screen and (max-width: 560px) {
+  .filter_btn {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+  }
+}

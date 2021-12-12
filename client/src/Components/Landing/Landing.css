@@ -1,0 +1,42 @@
+.landing_container {
+  /* border: 1px solid blue; */
+  min-height: 100vh;
+  color: whitesmoke;
+  background-color: rgba(2, 2, 2, 0.5);
+  background-image: url("../../assets/landing1.webp");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title {
+  color: rgb(212, 221, 216);
+  font-size: 100px;
+}
+
+.enter {
+  background-color: rgb(121, 56, 158);
+  border: 1px solid rgb(121, 56, 158);
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: whitesmoke;
+  width: 10%;
+  height: 40px;
+  padding: 2px;
+  border-radius: 20px;
+  transition: 0.7s;
+  text-decoration: none;
+  text-shadow: yellow;
+}
+
+.enter:hover {
+  background: #2d2b55;
+  box-shadow: 0px 0px 30px rgba(121, 56, 158, 0.8);
+  letter-spacing: 8px;
+  transition: 0.7s;
+}
