@@ -41,7 +41,7 @@ const Videogame = () => {
 
     setGameObj({
       ...gameObj,
-      name: value,
+      [name]: value,
     });
   };
 
@@ -85,10 +85,11 @@ const Videogame = () => {
     e.preventDefault();
     const arrayChecksGenres = getArrayGenres();
     const arrayChecksPlatforms = getArrayPlatforms();
+    console.log(gameObj);
 
     const formData = new FormData();
 
-    formData.append("name", gameObj.error);
+    formData.append("name", gameObj.name);
     formData.append("description", gameObj.description);
     formData.append("released", gameObj.released);
     formData.append("rating", gameObj.rating);

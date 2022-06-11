@@ -59,6 +59,7 @@ const getVideoGames = async (req, res) => {
 const postVideoGame = async (req, res) => {
   const { name, description, released, rating, genres, platforms } = req.body;
 
+  console.log(req.body);
   if (!name || !description || !released || !rating) {
     return res.json({
       status: 400,

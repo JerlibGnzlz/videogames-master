@@ -1,6 +1,7 @@
 require("dotenv").config();
 const { ALL_GAMES, API_KEY, BY_NAME, BY_ID, ALL_GENRES } = process.env;
 const axios = require("axios");
+console.log(ALL_GENRES);
 
 const GameByIdFromApi = async (idVideogame) => {
   const response = await axios(`${BY_ID}${idVideogame}?key=${API_KEY}`);
